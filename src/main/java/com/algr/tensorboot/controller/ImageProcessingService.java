@@ -49,6 +49,7 @@ public class ImageProcessingService {
             return new RecognitionResult(imagePreview, recognitions);
         } catch (IOException e) {
             log.info("Error during reading file input stream", e);
+            e.printStackTrace();
             return new RecognitionResult();
         } finally {
             if (image != null) {

@@ -23,7 +23,7 @@ import lombok.extern.log4j.Log4j2;
  */
 @Log4j2
 @Component
-public class MobilenetV2Classifier extends AbstractClassifier<BufferedImage, List<Recognition>, Float> {
+public class  MobilenetV2Classifier extends AbstractClassifier<BufferedImage, List<Recognition>, Float> {
     private static final int BYTES_IN_MB = 1024 * 1024;
 
     private final ModelConfig modelConfig;
